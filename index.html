@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikanoppapeli 2 nopalla</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <div class="container">
+        <h1>Sikanoppapeli - Kaksi noppaa</h1>
+        <div>
+            <label for="playerCount">Pelaajien lukumäärä:</label>
+            <input type="number" id="playerCount" value="2" min="2" max="5">
+            <button onclick="initializeGame()">Aloita peli</button>
+        </div>
+        <div id="playersContainer" class="players"></div>
+        <div class="dice">
+            <img id="diceImage1" src="d1.gif" alt="Noppa 1">
+            <img id="diceImage2" src="d1.gif" alt="Noppa 2">
+        </div>
+        <div class="controls">
+            <button id="rollBtn" onclick="rollDice()" disabled>Heitä Noppia</button>
+            <button id="holdBtn" onclick="hold()" disabled>Pysäytä</button>
+        </div>
+        <div class="message" id="message"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
